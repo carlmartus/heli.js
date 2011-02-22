@@ -114,7 +114,7 @@ function setup()
 	socket = new io.Socket(null);
 	socket.connect();
 	socket.on('connect', function () {
-			console.log("Net : Connected!");
+			//console.log("Net : Connected!");
 			greet = { msg : 'GREET' };
 			socket.send(greet);
 			sockOn = true;
@@ -129,7 +129,7 @@ function setup()
 				clientList.push(cl);
 			}
 			cl.alive = true;
-			console.log("New client " + json.owner);
+			//console.log("New client " + json.owner);
 			break;
 
 			case 'WHERE' :
@@ -148,7 +148,7 @@ function setup()
 			});
 
 	socket.on('disconnect', function () {
-			console.log("Net : Disconnect!");
+			//console.log("Net : Disconnect!");
 			sockOn = false;
 			var cl = getHeli(json.owner);
 			cl.alive = false;
@@ -173,7 +173,7 @@ function holdUp(ev)
 
 function frameStatus()
 {
-	console.log("Status");
+	//console.log("Status");
 }
 
 function drawHeli(heli)
@@ -217,7 +217,7 @@ function drawGame()
 
 function heliCrash()
 {
-	console.log("Heli dead");
+	//console.log("Heli dead");
 	meHeli.alive = false;
 
 	var ded = { msg:'DEAD' };
