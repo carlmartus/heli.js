@@ -1,0 +1,55 @@
+Heli.js
+=======
+
+This project was created during the 48H Hackathon
+februari 18-20 2011 in Malmö Sweden.
+(http://stpln.com/blog/)
+
+
+
+0. Authors
+==========
+Authors:
+Filip Lagerlov
+Martin Sandgren
+
+Kudos goes out to Jörgen Lundgren and Oskar.
+
+1. Dependencies
+===============
+
+Server:
+* Node.js
+* Socket.io
+
+Client:
+* HTML5 canvas compatible browser (Most modern are)
+
+2. Usage
+========
+
+Download the code to a folder. Go to the folder with
+your favorite terminal. Start the server with node.js
+in a terminal:
+
+ > node server.js
+
+NOTE: Socket.io uses ports in the range below 1000 and
+might need root-acess in order use them. If an error
+is presented just start it with root acess.
+
+In Ubuntu:
+
+ > sudo node server.js
+
+Now use your browser to surf in to the server on port
+8080. The adress should be:
+
+ http://localhost:8080/
+
+Thats it!
+
+If something is not working check the terminal for
+debugging messages or clues.
+
+
